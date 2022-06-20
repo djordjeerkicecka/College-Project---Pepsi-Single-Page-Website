@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Site Title -->
+    <title>Pepsi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="img/png" href="images/pepsi-favicon.png">
+
+    <!-- Fontawsome Plugins -->
+    <link rel="stylesheet" href="styles/fontawsome/css/all.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Navigation Logo -->
+            <img class="navbar-logo" src="images/pepsi-logo.png" alt="Pepsi brand logo">
+
+            <!-- Navigation Button-->
+            <a class="btn-nav" onclick="ExpandNavbar()"><i class="fa-solid fa-bars"></i></a>
+            
+            <!-- Navigation Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" onclick="CloseNavbar()" href="index.html#landing">welcome</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="CloseNavbar()" href="index.html#about">about</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="CloseNavbar()" href="index.html#carousel">products</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="CloseNavbar()" href="index.html#contact">contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing -->
+    <section class="landing" id="landing">
+        <!-- Landing Background Image-->
+        <img class="landing-background" src="images/mobile/mobile-landing-bg.png" alt="Landing Backround Image">
+        
+        <div class="container">
+            <!-- Landing Top Text -->
+            <hgroup class="landing-text top-text">
+                <h1>this summer fight</h1>
+                <h1 class="red">the heat</h1>
+            </hgroup>
+
+            <!-- Landing Bottom Text-->
+            <hgroup class="landing-text bottom-text">
+                <h1>with a glass of your </h1>
+                <h1 class="red">favorite carbonated</h1>
+                <h1>sweet drink</h1>
+            </hgroup>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <div class="about" id="about">
+        <!-- Section Title -->
+        <h2 class="section-title">Meet our brand</h2>
+
+        <!-- Cards Container -->
+        <div class="cards container">
+
+            <!-- Card 1 -->
+            <article class="card">
+                <div class="card-head" onclick="ExpandCard(0)">
+                    <h4 class="card-title">What is a Pepsi?</h4>
+                    <a class="card-arrow"><i class="fa-solid fa-angles-right"></i></a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Pepsi is a sweet-tasting carbonated soft drink. 
+                        Originally made by Caleb Bradham, it's now
+                        mad and sold all over the world!
+                    </p>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div class="card-head" onclick="ExpandCard(1)">
+                    <h4 class="card-title">What's in a Pepsi?</h4>
+                    <a class="card-arrow"><i class="fa-solid fa-angles-right"></i></a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        The ingredients of a Pepsi drink are water, 
+                        corn syrup, food coloring, a bit of sugar and
+                        caffeine, a touch of citric acid for that slightly 
+                        acidic flavour
+                    </p>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div class="card-head" onclick="ExpandCard(2)">
+                    <h4 class="card-title">Why should I drink it?</h4>
+                    <a class="card-arrow"><i class="fa-solid fa-angles-right"></i></a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        It’s the best beverage on the market that you 
+                        can consume anywhere at any time!
+                        Should you dislike the original taste 
+                        you can different flavours too!
+                    </p>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+                <div class="card-head" onclick="ExpandCard(3)">
+                    <h4 class="card-title">Where can I buy it?</h4>
+                    <a class="card-arrow"><i class="fa-solid fa-angles-right"></i></a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Pepsi is available almost anywhere in the world! 
+                        We do business in over 200 countries or
+                        territories all over the world! 
+                        <br />
+                        <br />
+                        Drop by your local shop and buy yourself a Pepsi!
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <section class="carousel" id="carousel">
+        <!-- Carousel Background Image -->
+        <img class="carousel-background" src="images/mobile/mobile-carousel-bg.png" alt="Carousel Background Image">
+
+        <!-- Background Carousel Animation -->
+        <canvas id="canvas"></canvas>
+
+        <!-- Section Title -->
+        <h2 class="section-title">Newest products</h2>
+
+        <!-- Slides -->
+        <div class="slides">
+
+            <!-- Slide 1 -->
+            <article class="slide slide-active">
+                <!-- Slide Title -->
+                <h3 class="slide-title">Pepsi Mango</h3>
+
+                <!-- Slide Image -->
+                <img class="slide-img" src="images/pepsi-mango.png" alt="Mango Pepsi Can">
+
+                <!-- Slide Text -->
+                <p class="slide-text">
+                    Your favorite drink now with the flavor of an exotic fruit!
+                </p>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="slide">
+                <!-- Slide Title -->
+                <h3 class="slide-title">Caffeine Free Pepsi</h3>
+
+                <!-- Slide Image -->
+                <img class="slide-img" src="images/pepsi-decaf.png" alt="Mango Pepsi Can">
+
+                <!-- Slide Text -->
+                <p class="slide-text">
+                    A caffeine free alternative is nov available for those who can’t handle it!
+                </p>
+            </article>
+
+            <!-- Slide 3 -->
+            <article class="slide">
+                <!-- Slide Title -->
+                <h3 class="slide-title">Diet Pepsi</h3>
+
+                <!-- Slide Image -->
+                <img class="slide-img" src="images/pepsi-diet.png" alt="Mango Pepsi Can">
+
+                <!-- Slide Text -->
+                <p class="slide-text">
+                    A Pepsi variant with a lower caloric value for those worried about their weight!
+                </p>
+            </article>
+
+            <!-- Slide 4 -->
+            <article class="slide">
+                <!-- Slide Title -->
+                <h3 class="slide-title">pepsi wild cherry</h3>
+
+                <!-- Slide Image -->
+                <img class="slide-img" src="images/pepsi-cherry.png" alt="Mango Pepsi Can">
+
+                <!-- Slide Text -->
+                <p class="slide-text">
+                    A Refreshing taste of wild cherries added to the well-known and liked taste of pepsi
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Dots -->
+        <ul class="dots">
+            <li class="dot dot-active" onclick="ShowSlide(0)"></li>
+            <li class="dot" onclick="ShowSlide(1)"></li>
+            <li class="dot" onclick="ShowSlide(2)"></li>
+            <li class="dot" onclick="ShowSlide(3)"></li>
+        </ul>
+
+        <!-- Arrows -->
+        <div class="arrows container">
+            <a class="arrow-left" onclick="NextSlide(-1)"><i class="fa-solid fa-angle-left"></i></a>
+            <a class="arrow-right" onclick="NextSlide(1)"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <!-- Container -->
+        <div class="container">
+            <!-- Section Title -->
+            <h2 class="section-title">Want to get in touch with us?</h2>
+            
+            <!-- Section Message -->
+            <h3 class="section-message">Fill out this form and we'll get back to you!</h3>
+            
+            <!-- Contact Form --> 
+            <form class="contact-form" action="index.html" method="POST">
+                <!-- Form Row 1 -->
+                <div class="form-row">
+                    <!-- Input Name -->
+                    <input class="form-text" type="text" name="name" id="name" placeholder="Enter your name here" required pattern="a-zA-Z">
+
+                    <!-- Input Surname -->
+                    <input class="form-text" type="text" name="surname" id="surname" placeholder="Enter your surname here" required pattern="a-zA-Z">
+                </div>
+
+                <!-- Form Row 2 -->
+                <div class="form-row">
+                    <!-- Input Email -->
+                    <input class="form-text" type="email" name="email" id="email" placeholder="Enter your email here" required>
+
+                    <!-- Input Comment -->
+                    <textarea class="form-text" name="comment" id="comment" cols="30" rows="5" placeholder="Enter your comment here" required></textarea>
+
+                    <!-- Input Checkbox -->
+                    <div class="checkbox">
+                        <input class="check-field" type="checkbox" name="updates" id="updates">
+                        <label class="check-label" for="updates">I want to recive updates</label>
+                    </div>
+                </div>
+
+                <!-- Form Row 3 -->
+                <div class="form-row">
+                    <!-- Submit Button -->
+                    <input class="btn-submit" type="submit" value="Send it!">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer Title -->
+        <h2 class="footer-title">socials</h2>
+
+        <!-- Footer Links -->
+        <ul>
+            <li class="footer-item"><a class="footer-link" href="https://www.facebook.com/pepsi"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li class="footer-item"><a class="footer-link" href="https://twitter.com/pepsi"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="footer-item"><a class="footer-link" href="https://www.linkedin.com/company/pepsico/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="footer-item"><a class="footer-link" href="https://www.instagram.com/pepsi/"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+
+        <!-- Footer Logo -->
+        <img class="footer-logo" src="images/pepsi-logo.png" alt="Pepsi Logo Footer">
+
+        <!-- Copyright -->
+        <h3 class="copyright">&copy; 2020. Đorđe Erkić IT 1/18</h3>
+    </footer>
+
+
+    <!-- Scripts -->
+    <!-- JQuery -->
+    <script src="scripts/jquery.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="scripts/main.js"></script>
+
+    <!-- Carousel JavaScript -->
+    <script src="scripts/carousel.js"></script>
+
+    <!-- Canvas JavaScript -->
+    <script src="scripts/canvas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+/*************
+    Fonts
+**************/
+
+// Roboto-Light
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("fonts/roboto/Roboto-Light.ttf");
+}
+
+// Roboto-Medium  
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("fonts/roboto/Roboto-Medium.ttf");
+}
+
+// Roboto-Regular
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("fonts/roboto/Roboto-Regular.ttf");
+}
+
+// Roboto-Black 
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("fonts/roboto/Roboto-Black.ttf");
+}
+
+// Poppins-Light 
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("fonts/poppins/Poppins-Light.ttf");
+}
+
+// Poppins-Medium
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("fonts/poppins/Poppins-Medium.ttf");
+}
+
+// Poppins-Bold 
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("fonts/poppins/Poppins-Bold.ttf");
+}
+
+/*************
+    Colors
+**************/
+
+$blue : #005cb4;
+$dark-blue: #004b93;
+$red: #c9002b;
+$brown: #3c3024;
+$white: #fff;
+$gray: #efefef;
+
+/*************
+Global Settings
+**************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 335px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 1180px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.red {
+    color: $red;
+}
